@@ -51,7 +51,7 @@
         macro0: macro0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N1 &kp N2 &kp N1 &kp N3>;
+            bindings = <&kp N2 &kp N0 &kp N0 &kp N6 &kp N8 &kp N8 &kp ENTER>;
             label = "MACRO0";
         };
     };
@@ -83,10 +83,10 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2      &kp N3  &kp N4        &kp N5                        &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
-&kp DELETE  &kp MINUS  &kp EQUAL   &kp F2  &kp F5        &trans                        &kp BSLH   &kp LBKT  &kp RBKT  &kp SEMI  &kp APOS  &kp ENTER
-&kp LSHFT   &trans     &kp C_MUTE  &kp N2  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &trans     &trans    &trans    &trans    &trans    &trans
-&kp LCTRL   &kp LGUI   &kp LALT    &trans  &trans        &trans        &trans  &trans  &kp SPACE  &kp BSPC  &trans    &trans    &trans    &trans
+&kp GRAVE   &kp N1     &kp N2      &kp N3   &kp N4        &kp N5                        &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
+&kp DELETE  &kp MINUS  &kp EQUAL   &kp F2   &kp F5        &trans                        &kp BSLH   &kp LBKT  &kp RBKT  &kp SEMI  &kp APOS  &kp ENTER
+&kp LSHFT   &trans     &kp C_MUTE  &macro0  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &trans     &trans    &trans    &trans    &trans    &trans
+&kp LCTRL   &kp LGUI   &kp LALT    &trans   &trans        &trans        &trans  &trans  &kp SPACE  &kp BSPC  &trans    &trans    &trans    &trans
             >;
         };
 
